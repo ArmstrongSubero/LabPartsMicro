@@ -9,7 +9,7 @@
 - **Database Management**: Store, search, and update details about your components, including type, part number, description, and footprint.
 - **Datasheet Viewer**: Attach datasheets in PDF format and view them directly using the integrated datasheet viewer.
 - **Stock Management**: Keep track of component quantities and locations.
-- **Wishlist**: Maintain a wishlist for components you'd like to add in the future.
+  
 - **Backup and Restore**: Backup your database to prevent data loss and restore it when needed.
 
 ## Table of Contents

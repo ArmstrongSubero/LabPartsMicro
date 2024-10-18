@@ -1,126 +1,104 @@
-LabParts
+# LabParts
 
+![LabParts Logo](icons/transistor.ico)
 
+**LabParts** is a desktop database application designed to help hobbyists and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop.
 
-LabParts is a desktop database application designed to help hobbyists and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop.
+## Features
 
-Features
+- **Database Management**: Store, search, and update details about your components, including type, part number, description, and footprint.
+- **Datasheet Viewer**: Attach datasheets in PDF format and view them directly using the integrated datasheet viewer.
+- **Stock Management**: Keep track of component quantities and locations.
+- **Wishlist**: Maintain a wishlist for components you'd like to add in the future.
+- **Backup and Restore**: Backup your database to prevent data loss and restore it when needed.
 
-Database Management: Store, search, and update details about your components, including type, part number, description, and footprint.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Wishlist Feature](#wishlist-feature)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-Datasheet Viewer: Attach datasheets in PDF format and view them directly using the integrated datasheet viewer.
+## Installation
 
-Stock Management: Keep track of component quantities and locations.
+### Prerequisites
+- Python 3.12 or higher
+- [PyInstaller](https://pyinstaller.org/)
+- Recommended: Set up a virtual environment to manage dependencies.
 
-Wishlist: Maintain a wishlist for components you'd like to add in the future.
+### Steps to Install
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/Parts_Database.git
+    cd Parts_Database
+    ```
 
-Backup and Restore: Backup your database to prevent data loss and restore it when needed.
+2. Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Table of Contents
+3. Run the application:
+    ```sh
+    python main.py
+    ```
 
-Installation
+4. To create an executable (optional):
+    ```sh
+    pyinstaller --onefile --windowed --icon="icons/custom_icon.ico" \
+        --add-data "data;data" --add-data "db;db" --add-data "datasheets;datasheets" \
+        --add-data "icons;icons" --add-data "style;style" main.py
+    ```
 
-Usage
+## Usage
 
-Wishlist Feature
+### Main Interface
+- **Add Components**: Click "Add Component" to add a new part, including its description, type, and quantity.
+- **Search Components**: Use the search field at the top to quickly locate a part by name or ID.
+- **View Datasheet**: Click "View" next to a component to open the attached datasheet (PDF) with SumatraPDF.
 
-Dependencies
+### Backup and Restore
+- Access the backup and restore options from the "File" menu to keep your database secure.
 
-Contributing
+### Wishlist Feature
+- Click on the "Wishlist" button to open a separate popup window where you can add components you wish to acquire.
+- This feature is designed to help you keep track of missing parts for future projects.
 
-License
+### TODO
+- Improve the Wishlist feature by allowing users to set priorities and estimated prices for components.
 
-Installation
+## Dependencies
 
-Prerequisites
-
-Python 3.12 or higher
-
-PyInstaller
-
-Recommended: Set up a virtual environment to manage dependencies.
-
-Steps to Install
-
-Clone the repository:
-
-git clone https://github.com/yourusername/Parts_Database.git
-cd Parts_Database
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the application:
-
-python main.py
-
-To create an executable (optional):
-
-pyinstaller --onefile --windowed --icon="icons/custom_icon.ico" \
-    --add-data "data;data" --add-data "db;db" --add-data "datasheets;datasheets" \
-    --add-data "icons;icons" --add-data "style;style" main.py
-
-Usage
-
-Main Interface
-
-Add Components: Click "Add Component" to add a new part, including its description, type, and quantity.
-
-Search Components: Use the search field at the top to quickly locate a part by name or ID.
-
-View Datasheet: Click "View" next to a component to open the attached datasheet (PDF) with SumatraPDF.
-
-Backup and Restore
-
-Access the backup and restore options from the "File" menu to keep your database secure.
-
-Wishlist Feature
-
-Click on the "Wishlist" button to open a separate popup window where you can add components you wish to acquire.
-
-This feature is designed to help you keep track of missing parts for future projects.
-
-TODO
-
-Improve the Wishlist feature by allowing users to set priorities and estimated prices for components.
-
-Dependencies
-
-PyQt5: For creating the GUI.
-
-SQLite3: For database storage.
-
-SumatraPDF: For viewing attached datasheets.
+- [PyQt5](https://pypi.org/project/PyQt5/): For creating the GUI.
+- [SQLite3](https://www.sqlite.org/index.html): For database storage.
+- [SumatraPDF](https://www.sumatrapdfreader.org/): For viewing attached datasheets.
 
 To install the dependencies:
-
+```sh
 pip install -r requirements.txt
+```
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you find a bug or want to add new features:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
 
-Fork the repository.
+## License
 
-Create a new branch (git checkout -b feature-name).
+This project is licensed under the GPLv3 License due to the inclusion of SumatraPDF. See the [LICENSE](LICENSE) file for details.
 
-Commit your changes (git commit -m 'Add new feature').
+## Contact
 
-Push to the branch (git push origin feature-name).
+If you have any questions, feel free to contact me via GitHub or email: 
+- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: [youremail@example.com](mailto:youremail@example.com)
 
-Create a pull request.
+---
 
-License
+Thank you for using **LabParts**! If you find this project helpful, consider giving it a star on GitHub ⭐.
 
-This project is licensed under the GPLv3 License due to the inclusion of SumatraPDF. See the LICENSE file for details.
-
-Contact
-
-If you have any questions, feel free to contact me via GitHub or email:
-
-GitHub: yourusername
-
-Email: youremail@example.com
-
-Thank you for using LabParts! If you find this project helpful, consider giving it a star on GitHub ⭐.

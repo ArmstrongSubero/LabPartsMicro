@@ -28,6 +28,8 @@
 - Recommended: Set up a virtual environment to manage dependencies.
 
 ### Steps to Install
+There is a prebuilt exe for 64-bit windows in the dist folder. You can build from source as follows:
+
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/Parts_Database.git

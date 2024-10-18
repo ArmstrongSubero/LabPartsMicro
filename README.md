@@ -2,7 +2,7 @@
 
 ![LabParts Logo](icons/transistor.ico)
 
-**LabParts** is a desktop database application designed to help hobbyists and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop.
+**LabParts** is a desktop database application designed to help makers and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop. I made this as a simple, clean alternative to the complex and subscription based programs available. 
 
 ## Features
 
@@ -66,7 +66,7 @@
 - This feature is designed to help you keep track of missing parts for future projects.
 
 ### TODO
-- Improve the Wishlist feature by allowing users to set priorities and estimated prices for components.
+- Add Wishlist feature by allowing users to set priorities and estimated prices for components.
 
 ## Dependencies
 
@@ -90,13 +90,13 @@ Contributions are welcome! If you find a bug or want to add new features:
 
 ## License
 
-This project is licensed under the GPLv3 License due to the inclusion of SumatraPDF. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPLv3 License due to the inclusion of SumatraPDF. See the [LICENSE](LICENSE) file for details. Its a requirement since I have sumatra bundled.
 
 ## Contact
 
 If you have any questions, feel free to contact me via GitHub or email: 
-- **GitHub**: [yourusername](https://github.com/yourusername)
-- **Email**: [youremail@example.com](mailto:youremail@example.com)
+- **GitHub**: [armstrongsubero](https://github.com/ArmstrongSubero)
+- **Email**: [armstrongsubero@gmail.com](mailto:armstrongsuber@gmail.com)
 
 ---
 

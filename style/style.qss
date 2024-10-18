@@ -1,0 +1,167 @@
+/* General window style */
+QWidget {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #424242;
+}
+
+/* Push buttons */
+QPushButton {
+    background-color: #6200ee; /* Material purple */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;  /* Adjust padding for a better balance */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hover effect for buttons */
+QPushButton:hover {
+    background-color: #3700b3; /* Slightly darker purple for hover */
+}
+
+/* Pressed effect for buttons */
+QPushButton:pressed {
+    background-color: #bb86fc; /* Lighter shade of purple when pressed */
+    color: #000000;  /* Black text on press */
+    padding: 9px 19px;   /* Simulate press effect by reducing padding */
+}
+
+/* LineEdit fields (search box, stock input, etc.) */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border-color: #6200ee;
+    background-color: #ffffff;
+}
+
+/* Table headers */
+QHeaderView::section {
+    background-color: #6200ee;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border: none;
+}
+
+/* Table items */
+QTableWidget {
+    background-color: #ffffff;
+    gridline-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    selection-background-color: #6200ee;
+    selection-color: white;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QTableWidget::item:selected {
+    background-color: #6200ee;
+    color: white;
+}
+
+/* Scrollbar styling */
+QScrollBar:vertical {
+    border: none;
+    background-color: #eeeeee;
+    width: 12px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #6200ee;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+/* Add and Save buttons with new color scheme */
+QPushButton#addComponentButton, QPushButton#saveDatabaseButton {
+    background-color: #ff5722; /* Material orange instead of green */
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;  /* Increase padding */
+    min-width: 150px;     /* Ensure enough space for the text */
+    min-height: 50px;     /* Set minimum height to make buttons taller */
+    font-weight: bold;
+}
+
+/* Hover effect */
+QPushButton#addComponentButton:hover, QPushButton#saveDatabaseButton:hover {
+    background-color: #e64a19; /* Darker orange for hover */
+}
+
+/* Pressed effect */
+QPushButton#addComponentButton:pressed, QPushButton#saveDatabaseButton:pressed {
+    background-color: #d84315; /* Even darker orange when pressed */
+    padding: 9px 19px;  /* Adjust padding to simulate press effect */
+}
+
+/* Smaller Delete button */
+QPushButton#deleteButton {
+    background-color: #ff1744;  /* Red for delete */
+    color: white;
+    border-radius: 5px;
+    padding: 9px;  /* Smaller padding for delete button */
+    min-width: 10px;    /* Ensure smaller width */
+    min-height: 10px;   /* Ensure smaller height */
+    font-weight: bold;
+    font-size: 12px;
+}
+
+QPushButton#deleteButton:hover {
+    background-color: #d50000;
+}
+
+QPushButton#deleteButton:pressed {
+    background-color: #b71c1c;
+}
+
+/* Search Button */
+QPushButton#searchButton {
+    background-color: #6200ee;  /* Primary color */
+    color: white;
+    border-radius: 10px;        /* Rounded corners */
+    padding: 5px 20px;          /* Adjust padding (reduce top and bottom) */
+    font-size: 16px;            /* Adjust font size to fit properly */
+    font-weight: bold;
+    border: none;
+    height: 40px;               /* Ensure button height is sufficient for the text */
+    line-height: 1.6em;         /* Adjust line height for vertical centering */
+}
+
+QPushButton#searchButton:hover {
+    background-color: #3700b3;  /* Darker color on hover */
+}
+
+QPushButton#searchButton:pressed {
+    background-color: #03dac6;  /* Lighter color when pressed */
+    color: #000000;
+}
+
+/* Search Field (QLineEdit) */
+QLineEdit#searchField {
+    background-color: #ffffff;
+    border: 2px solid #b0bec5;  /* Light border */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 15px;         /* Add padding inside the field */
+    font-size: 16px;            /* Make the font size bigger */
+    min-width: 300px;           /* Adjust the width (make the field longer) */
+    min-height: 20px;           /* Ensure a minimum height for the field */
+}
+
+QLineEdit#searchField:focus {
+    border-color: #6200ee;      /* Change border color on focus */
+    background-color: #ffffff;  /* Keep background white on focus */
+}

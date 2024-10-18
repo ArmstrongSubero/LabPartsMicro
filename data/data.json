@@ -1,0 +1,4 @@
+{
+    "types": ["Resistor", "Capacitor", "Inductor", "Diode", "Transistor", "IC", "MCU"],
+    "footprints": ["DIP", "QFP", "SOIC", "TQFP", "SMD", "BGA"]
+}

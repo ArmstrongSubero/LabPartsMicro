@@ -1,8 +1,8 @@
-# LabParts
+# LabParts Micro
 
 ![LabParts Logo](icons/transistor.ico)
 
-**LabParts** is a desktop database application designed to help makers and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop. I made this as a simple, clean alternative to the complex and subscription based programs available. 
+**LabParts Micro** is a desktop database application designed to help makers and electronics enthusiasts organize and manage their electronic components effectively. With features for storing part details, managing stock, and attaching datasheets, LabParts is the ideal tool for your small lab or workshop. I made this as a simple, clean alternative to the complex and subscription based programs available. 
 
 ## Features
 
